@@ -1,0 +1,17 @@
+# Virtual Environment
+dubai_env/
+*.pyc
+__pycache__/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Config Files
+.env
+
+# Exclude raw and processed datasets
+datasets/raw/
+datasets/processed/
+
+# Optionally, exclude all datasets just to be sure
+datasets/

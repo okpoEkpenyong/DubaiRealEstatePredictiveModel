@@ -1,0 +1,27 @@
+paths:
+  raw_data: "../datasets/raw"
+  processed_data: "../datasets/processed"
+  reports: "../docs/reports"
+  figures: "../docs/reports/figures"
+  notebooks: "../notebooks"
+  models: "../models"
+  utils: "../utils"
+  tests: "../tests"
+
+files:
+  01_real_estate_rents: "Rents & Transactions/rents.csv"
+  02_real_estate_transactions: "Rents & Transactions/transactions.csv"
+  03_cpi_annual: "Consumer Price Index/Consumer_Price_Index_Annually.csv"
+  04_cpi_monthly: "Consumer Price Index/Consumer_Price_Index_Monthly.csv"
+  05_cpi_quarterly: "Consumer Price Index/Consumer_Price_Index_Quarterly.csv"
+  06_population_estimates: "Population/Population_Estimates_and_Growth_by_Gender.csv"
+  07_population_indicators: "Population/Population_Indicators.csv"
+  08_tourism_regions: "Tourism/Guests_by_Hotel_Type_by_Region.csv"
+  09_tourism_ratings: "Tourism/Hotel_Establishments_and_Rooms_by_Rating_Type.csv"
+  10_tourism_indicators: "Tourism/Hotel_Establishments_Main_Indicators.csv"
+  11_gdp_quarterly_constant: "Gross Domestic Product/GDP_Quarterly_Constant_Prices.csv"
+  12_gdp_quarterly_current: "Gross Domestic Product/GDP_Quarterly_Current_Prices.csv"
+  13_world_dev_metadata: "World Development Indicators/Metadata_World_Development_Indicator.csv"
+  14_world_dev_indicators: "World Development Indicators/World_Development_Indicator.csv"
+  15_currency: "Currency Strength/AED-USD.csv"
+ 
