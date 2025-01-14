@@ -41,7 +41,7 @@ jobs:
 
     - name: Deploy to Server
       env:
-        DEPLOY_KEY: ${{ secrets.DEPLOYMENT_KEY }}
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
       run: |
         echo "Deploying using key: $DEPLOY_KEY"
         # Add deployment commands here
