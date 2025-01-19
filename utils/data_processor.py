@@ -121,8 +121,8 @@ def format_and_clean_table(df, datetime_columns=None, numeric_columns=None, date
         df.drop_duplicates(inplace=True)         
         
         # Display basic info
-        print("Formatted and Cleaned Data Overview:")
-        print(df.info())
+        # print("Formatted and Cleaned Data Overview:")
+        # print(df.info())
         
         return df
     except Exception as e:

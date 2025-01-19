@@ -106,7 +106,7 @@ def plot_trends(dataframe, main_col, time_col, secondary_col=None, time_format="
     plt.figure(figsize=figsize)
     ax = grouped.plot(y=main_col, use_index=True, label=main_col, legend=True)
     ax.set_ylabel(main_col, color="blue")
-    ax.set_title(f"Trend of {main_col} Over Time")
+    ax.set_title(f"Trend of {main_col} Over Time - {dataframe}")
     
     if secondary_col:
         grouped[secondary_col] = dataframe.groupby("Year")[secondary_col].mean()
