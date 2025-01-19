@@ -18,3 +18,7 @@ execnet==2.1.1
 pytest-cache==1.0
 coverage==7.6.10 
 pytest-cov==6.0.0
+cramjam==2.9.1 
+fastparquet==2024.11.0
+matplotlib==3.9.4 
+seaborn==0.13.2
