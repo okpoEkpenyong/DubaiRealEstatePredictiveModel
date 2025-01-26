@@ -106,7 +106,7 @@ def plot_trends(dataframe, main_col, time_col, secondary_col=None, time_format="
     plt.figure(figsize=figsize)
     ax = grouped.plot(y=main_col, use_index=True, label=main_col, legend=True)
     ax.set_ylabel(main_col, color="blue")
-    ax.set_title(f"Trend of {main_col} Over Time - {dataframe}")
+    ax.set_title(f"Trend of {main_col} Over Time")
     
     if secondary_col:
         grouped[secondary_col] = dataframe.groupby("Year")[secondary_col].mean()
@@ -141,11 +141,17 @@ def process_transaction_dates(transactions_df):
         # Optional: Drop rows with invalid dates
         # transactions_df.dropna(subset=['Transaction Date'], inplace=True)
     
+
     # Extract useful components
     transactions_df['Year'] = transactions_df['Transaction Date'].dt.year
     transactions_df['Month'] = transactions_df['Transaction Date'].dt.month
     transactions_df['Day'] = transactions_df['Transaction Date'].dt.day
     transactions_df['Hour'] = transactions_df['Transaction Date'].dt.hour
+    
+    # Extract Year-Week and Year-Month from Transaction Date
+    # transactions_df['YearWeek'] = transactions_df['Transaction Date'].dt.strftime('%Y-%U')  # Year-Week format
+    # transactions_df['YearMonth'] = transactions_df['Transaction Date'].dt.to_period('M').astype(str)  # Year-Month format
+
 
     return transactions_df
 

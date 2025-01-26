@@ -16,3 +16,4 @@ datasets/processed/
 # Optionally, exclude all datasets just to be sure
 datasets/
 learning/
+models/
