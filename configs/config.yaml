@@ -1,5 +1,6 @@
 paths:
   raw_data: "../datasets/raw"
+  external_data: "../datasets/external"
   processed_data: "../datasets/processed"
   reports: "../docs/reports"
   figures: "../docs/reports/figures"
@@ -24,4 +25,6 @@ files:
   13_world_dev_metadata: "World Development Indicators/Metadata_World_Development_Indicator.csv"
   14_world_dev_indicators: "World Development Indicators/World_Development_Indicator.csv"
   15_currency: "Currency Strength/AED-USD.csv"
+  16_area_coords: "Areas_Coord.csv"
+  16_projects_coords: "Projects_Coord.csv"
  
