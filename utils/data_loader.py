@@ -47,7 +47,6 @@ def load_in_parallel(file_paths, delimiter=";", skiprows=0):
     df_combined = pd.concat(results, ignore_index=True)
     return df_combined
 
-
 def load_with_dask(filepath, delimiter=";", use_tqdm=False, dtype=None):
     """
     Load large CSV files using Dask with optional tqdm progress bar.
